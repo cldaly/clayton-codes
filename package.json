@@ -1,0 +1,15 @@
+{
+  "name": "claytoncodes",
+  "version": "1.0.0",
+  "description": "clayton codes web page",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Clayton Daly",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.17.1"
+  }
+}
