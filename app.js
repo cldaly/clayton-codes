@@ -12,11 +12,13 @@ app.get("/", function(req, res){
 });
 
 // Home page, main content
-app.get("/home", function(req, res){
-	res.send("This is the home page");
+// app.get("/home", function(req, res){
+// 	res.send("This is the home page");
+// });
+
+app.get("/*", function(req, res){
+	res.redirect("/");
 });
-
-
 
 
 app.listen(3000, function(){

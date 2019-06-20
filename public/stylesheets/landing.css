@@ -3,6 +3,12 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
+#landing-title {
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
 #landing-header {
   z-index: 1;
   position: relative;
