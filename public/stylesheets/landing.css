@@ -48,7 +48,7 @@ section {
 
 @media (max-width: 900px) {
   section {
-    padding: 100px 40px;
+    padding: 80px 20px;
   }
 }
 
@@ -84,13 +84,19 @@ header nav li {
 
 @media (max-width: 900px) {
   header {
-    padding: 10px 50px;
+    padding: 10px 0;
     flex-direction: column;
     justify-content: space-around;
     height: 9vh;
   }
   header nav li {
     padding-bottom: 5px;
+  }
+  header nav {
+    font-size: 0.8em;
+    display: flex;
+    margin-right: 0;
+    justify-content: space-around;
   }
 }
 
@@ -267,6 +273,11 @@ footer a {
   transition: max-height 0.5s ease-in;
 }
 
+@media (max-width: 900px) {
+  #aboutSection {
+    width: 95%;
+  }
+}
 
 /* MY PROJECTS SECTION */
 
