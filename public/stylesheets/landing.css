@@ -38,6 +38,12 @@ section {
   padding: 100px 80px;
 }
 
+@media (max-width: 900px) {
+  section {
+    padding: 100px 40px;
+  }
+}
+
 /* HEADER SECTION */
 
 header {
@@ -73,7 +79,10 @@ header nav li {
     padding: 10px 50px;
     flex-direction: column;
     justify-content: space-around;
-    height: 8vh;
+    height: 9vh;
+  }
+  header nav li {
+    padding-bottom: 5px;
   }
 }
 
@@ -139,6 +148,8 @@ footer a {
 
 #landingMain p {
   font-size: 1.5em;
+  text-align: center;
+  color: #000;
 }
 
 #titleSection {
@@ -159,10 +170,6 @@ footer a {
 }
 
 #landingMain h1 {
-  color: #000;
-}
-
-#landingMain p {
   color: #000;
 }
 
@@ -191,7 +198,9 @@ footer a {
   }
 }
 
-
+#aboutSection {
+  text-align: center;
+}
 
 
 
