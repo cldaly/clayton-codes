@@ -73,7 +73,7 @@ header nav li {
     padding: 10px 50px;
     flex-direction: column;
     justify-content: space-around;
-    height: 7vh;
+    height: 8vh;
   }
 }
 
@@ -151,7 +151,7 @@ footer a {
   z-index: 0;
   margin: 0;
   padding: 0;
-  padding-top: 35vh;
+  padding-top: 30vh;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -178,7 +178,18 @@ footer a {
   align-self: center;
 }
 
-
+@media (max-width: 900px) {
+  #landingTitle {
+    font-size: 2.5rem;
+  }
+  #landingMain p {
+    font-size: 1em;
+  }
+  #learnMore a {
+    padding: 6px 8px;
+    font-size: 0.8em;
+  }
+}
 
 
 
