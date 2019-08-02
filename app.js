@@ -15,16 +15,11 @@ app.get("/", function(req, res){
 	res.render("landing");
 });
 
-// Home page, main content
-// app.get("/home", function(req, res){
-// 	res.send("This is the home page");
-// });
-
 app.get("/*", function(req, res){
 	res.redirect("/");
 });
 
 
-app.listen(port, function(){
-	console.log("Server running, port 3000");
+app.listen(4000, function(){
+	console.log("Server running, port 4000");
 });

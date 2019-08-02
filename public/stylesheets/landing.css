@@ -1,89 +1,213 @@
+/* GENERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #000;
-  font-family: 'Ubuntu', sans-serif;
+  background-color: #eee;
+  font-family: 'Montserrat', sans-serif;
 }
 
-#landing-title {
-  font-weight: 400;
-  font-size: 2.5rem;
-  margin-bottom: 0;
+ul, nav {
+  list-style: none;
 }
 
-#landing-header {
-  z-index: 1;
-  position: relative;
-  text-align: center;
-  padding-top: 40vh;
+a {
+  text-decoration: none;
+  opacity: 0.7;
+  color: #000;
+  transition: opacity 0.2s;
 }
 
-#landing-header h1 {
-  color: #fff;
+a:hover {
+  transition: opacity 0.2s;
+  opacity: 1;
 }
 
-#landing-header p {
-  color: #fff;
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 80px;
 }
 
+/* HEADER SECTION */
 
-.slideshow { 
+header {
   position: fixed;
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  color: #000;
+  background-color: #ffe4b5;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+header h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+header nav {
+  display: flex;
+  margin-right: -15px;
+}
+
+header nav li {
+  margin: 0 15px;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 10px 50px;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 7vh;
+  }
+}
+
+
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffe4b5;
+  color: #000;
+  padding: 15px 0;
+  width: 100%;
+  opacity: 0.9;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  margin-left: 16px;
+}
+
+footer p {
+  text-transform: uppercase;
+  font-size: 0.85em;
+  opacity: 0.8;
+  align-self: center;
+}
+
+footer a {
+  color: #000;
+}
+
+@media (max-width: 1100px) {
+  footer {
+    flex-direction: column;
+  }
+  footer p {
+    text-align: center;
+    margin-bottom: 20px
+  }
+  footer ul li {
+    margin: 0 8px;
+  }
+}
+
+
+/* LANDING TITLE SECTION */
+
+#landingTitle {
+  font-weight: 400;
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+#landingMain {
+  text-align: center;
+  padding: 20px 40px 40px;
+}
+
+#landingMain p {
+  font-size: 1.5em;
+}
+
+#titleSection {
+  position: relative;
+  min-height: 100vh;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   z-index: 0;
-  list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.slideshow li { 
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  padding-top: 35vh;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  opacity: 0;
-  z-index: 0;
-  animation: imageAnimation 50s linear infinite; 
+  background-image: url("https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=4050&q=80");
 }
 
-.slideshow li:nth-child(1) { 
-  background-image: url(https://images.unsplash.com/photo-1541240290619-3f2fad86473d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80);
-}
-.slideshow li:nth-child(2) { 
-  background-image: url(https://images.unsplash.com/photo-1549605659-32d82da3a059?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80);
-  animation-delay: 10s; 
-}
-.slideshow li:nth-child(3) { 
-  background-image: url(https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80);
-  animation-delay: 20s; 
-}
-.slideshow li:nth-child(4) { 
-  background-image: url(https://images.unsplash.com/photo-1519397154350-533cea5b8bff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80);
-  animation-delay: 30s; 
-}
-.slideshow li:nth-child(5) { 
-  background-image: url(https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80);
-  animation-delay: 40s; 
+#landingMain h1 {
+  color: #000;
 }
 
-@keyframes imageAnimation { 
-  0% { 
-    opacity: 0; 
-    animation-timing-function: ease-in;
-  }
-  10% {
-    opacity: 1;
-    animation-timing-function: ease-out;
-  }
-  20% {
-    opacity: 1
-  }
-  30% {
-    opacity: 0
-  }
+#landingMain p {
+  color: #000;
 }
+
+#learnMore {
+  margin: 20px auto 0;
+}
+
+#learnMore a {
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  width: 150px;
+  align-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
