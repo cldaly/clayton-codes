@@ -20,6 +20,6 @@ app.get("/*", function(req, res){
 });
 
 
-app.listen(post, function(){
+app.listen(port, function(){
 	console.log("Server running, port 4000");
 });
