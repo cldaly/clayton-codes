@@ -46,6 +46,12 @@ section {
   padding: 100px 80px;
 }
 
+.sectionTitle {
+  font-size: 2.5em;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
 @media (max-width: 900px) {
   section {
     padding: 80px 20px;
@@ -185,6 +191,7 @@ footer a {
 }
 
 #landingMain h1 {
+  letter-spacing: 0.1em;
   color: #000;
 }
 
@@ -222,11 +229,6 @@ footer a {
   flex-direction: column;
   text-align: center;
   margin: 0 auto;
-}
-
-#aboutSection h3 {
-  font-size: 2em;
-  font-weight: 400;
 }
 
 #aboutSection img {
@@ -292,19 +294,91 @@ footer a {
 
 #projects {
   color: #fff;
-  background-color: #111;
+  background-color: #485263;
 }
 
-#projects h3 {
-  font-size: 2em;
-  font-weight: 400;
+.projectCard {
+  background-color: #eee;
+  color: #000;
+  margin: 50px auto;
+  padding: 15px;
+  border-radius: 4px;
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
+.cardTitle {
+  font-size: 1.75em;
+  margin-bottom: 10px;
+  /*font-weight: 400;*/
+  letter-spacing: 0.15em;
+}
 
+.cardImg {
+  order: 1;
+}
 
+.cardImg a {
+  opacity: 1;
+}
 
+.cardImg img {
+  width: 300px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
 
+.cardInfo {
+  order: 2;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.cardDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.cardDetails p {
+  padding: 5px 5px 10px;
+}
+
+.projectLink {
+  font-size: 1.2em;
+  margin: 20px;
+  align-self: flex-start;
+}
+
+@media (max-width: 900px) {
+  .projectCard {
+    flex-direction: column;
+  }
+  .cardImg {
+    order: 2;
+  }
+  .cardInfo {
+    order: 1;
+  }
+  .cardImg img {
+    width: 100%;
+    max-width: 500px;
+  }
+  .cardImg {
+    align-self: center;
+  }
+  .projectLink, .cardTitle {
+    align-self: center;
+  }
+  .cardDetails p {
+    padding: 5px 0 10px;
+  }
+}
 
 
 
