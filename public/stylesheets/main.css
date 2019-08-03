@@ -43,7 +43,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 80px;
+  padding: 100px 80px 60px;
 }
 
 .sectionTitle {
@@ -54,7 +54,7 @@ section {
 
 @media (max-width: 900px) {
   section {
-    padding: 80px 20px;
+    padding: 60px 20px 40px;
   }
 }
 
@@ -133,7 +133,6 @@ footer p {
   text-transform: uppercase;
   font-size: 0.85em;
   opacity: 0.8;
-  align-self: center;
 }
 
 footer a {
@@ -229,11 +228,13 @@ footer a {
   flex-direction: column;
   text-align: center;
   margin: 0 auto;
+  padding-top: 0;
 }
 
 #aboutSection img {
+  margin-top: 8vh;
   height: auto;
-  width: 250px;
+  width: 300px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   border-radius: 50%;
   margin-bottom: 20px;
@@ -288,6 +289,10 @@ footer a {
   #aboutSection {
     width: 95%;
   }
+  #aboutSection img {
+    width: 250px;
+    margin-top: 20px;
+  }
 }
 
 /* MY PROJECTS SECTION */
@@ -304,20 +309,34 @@ footer a {
   padding: 15px;
   border-radius: 4px;
   display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
   width: 90%;
   max-width: 1000px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .cardTitle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   font-size: 1.75em;
   margin-bottom: 10px;
   /*font-weight: 400;*/
   letter-spacing: 0.14em;
 }
 
+.cardTitle .wop {
+  letter-spacing: 0;
+  font-weight: 400;
+  padding: 0;
+  padding-left: 5px;
+  font-size: 0.6em;
+}
+
 .cardImg {
   order: 1;
+  align-self: center;
 }
 
 .cardImg a {
@@ -332,6 +351,7 @@ footer a {
 }
 
 .cardInfo {
+  align-items: stretch;
   order: 2;
   margin-left: 20px;
   display: flex;
@@ -351,7 +371,7 @@ footer a {
 
 .projectLink {
   font-size: 1.2em;
-  margin: 20px;
+  margin: 0 0 10px 20px;
   align-self: flex-start;
 }
 
@@ -360,6 +380,8 @@ footer a {
     flex-direction: column;
   }
   .cardTitle {
+    flex-direction: column;
+    align-items: center;
     letter-spacing: 0.05em;
   }
   .cardImg {
@@ -380,7 +402,7 @@ footer a {
     margin: 15px 0;
     font-size: 1em;
   }
-  .projectLink, .cardTitle {
+  .projectLink {
     align-self: center;
   }
   .cardDetails p {
