@@ -167,20 +167,14 @@ footer a {
     flex-direction: column;
   }
   footer p {
+    margin-top: 10px;
     text-align: center;
   }
   footer ul li {
     margin: 0 10px;
   }
-  #footerUnsplash{
-    order: 3;
-  }
-  #footerDev{
-    order: 1;
-  }
   #footerIcons{
-    margin: 10px 0;
-    order: 2;
+    margin-top: 10px;
   }
 }
 
