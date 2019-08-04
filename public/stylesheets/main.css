@@ -11,8 +11,13 @@ html {
 }
 
 body {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
   background-color: #eee;
   font-family: 'Montserrat', sans-serif;
+  padding-bottom: 6vh;
 }
 
 ul, nav {
@@ -77,6 +82,8 @@ header {
 header h2 {
   font-weight: 400;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 5px 0;
 }
 
 header nav {
@@ -91,10 +98,10 @@ header nav li {
 @media (max-width: 900px) {
   header {
     position: absolute;
-    padding: 10px 0;
+    padding: 5px 0;
     flex-direction: column;
     justify-content: space-around;
-    height: 9vh;
+    height: auto;
   }
   header nav li {
     padding-bottom: 5px;
@@ -117,8 +124,11 @@ footer {
   background-color: #ffe4b5;
   color: #000;
   padding: 15px 0;
-  width: 100%;
   opacity: 0.95;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6vh;
 }
 
 footer ul {
@@ -139,16 +149,39 @@ footer a {
   color: #000;
 }
 
-@media (max-width: 1100px) {
+#footerUnsplash{
+  order: 1;
+}
+#footerDev{
+  order: 2;
+}
+#footerIcons{
+  order: 3;
+}
+
+@media (max-width: 900px) {
+  body {
+    padding-bottom: 12vh;
+  }
   footer {
+    height: 12vh;
     flex-direction: column;
   }
   footer p {
     text-align: center;
-    margin-bottom: 20px
   }
   footer ul li {
-    margin: 0 8px;
+    margin: 0 10px;
+  }
+  #footerUnsplash{
+    order: 3;
+  }
+  #footerDev{
+    order: 1;
+  }
+  #footerIcons{
+    margin: 10px 0;
+    order: 2;
   }
 }
 
@@ -199,11 +232,22 @@ footer a {
 }
 
 #learnMore a {
+  background-color: #fff;
   border-radius: 5px;
   padding: 10px 20px;
   border: 1px solid #000;
   width: 150px;
   align-self: center;
+  transition: 0.2s;
+}
+
+#learnMore a:hover {
+  background-color: #fff4e0;
+  transition: 0.2s;
+}
+#learnMore a:active {
+  background-color: #ffe4b5;
+  transition: 0.02s;
 }
 
 @media (max-width: 900px) {
@@ -291,7 +335,7 @@ footer a {
   }
   #aboutSection img {
     width: 250px;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 }
 

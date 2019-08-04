@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/ttt.css">
+    <script src="ticTacScripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/23839d1fc8.js"></script>
+    <link rel="shortcut icon" href="../img/fav-icon.png">
+    <title>Clayton Codes</title>
+</head>
+<body>
+    <header>
+        <h2><a href="/">Clayton Codes</a></h2>
+        <nav>
+            <li><a href="/#about">About Me</a></li>
+            <li><a href="/#projects">My Projects</a></li>
+            <li><a href="/#contact">Contact Me</a></li>
+        </nav>
+    </header>
+
+    <div id="ticTacToe">
+    	<div class="container">
+	    	<h1>Tic Tac Toe</h1>
+			<button type="button" id="startButton" class="mainButton" onclick="startGame()">Start!</button>
+	  	</div>
+
+	    <div class="container">
+	    	<table id="ttt">
+	        	<tr class="ttrow">
+	            	<td class="ttbox" id="tl""></td>
+	            	<td class="ttbox vertical" id="tm""></td>
+	            	<td class="ttbox" id="tr"></td>
+	        	</tr>
+	        	<tr class="ttrow">
+	            	<td class="ttbox horizontal" id="ml"></td>
+	            	<td class="ttbox middle" id="mm"></td>
+	            	<td class="ttbox horizontal" id="mr"></td>
+	        	</tr>
+	        	<tr class="ttrow">
+	          		<td class="ttbox" id="bl"></td>
+	          		<td class="ttbox vertical" id="bm"></td>
+	          		<td class="ttbox" id="br"></td>
+	        	</tr>
+	      	</table>
+	    </div>
+
+	    <div class="container">
+	      	<h4 id="playerTurnText"></h4>
+	    </div>
+
+	    <div class="container" id="scoreArea">
+	      	<table id="scoreBoard">
+	        	<thead>
+	          		<tr>
+	            		<th>Score</th>
+	            		<th>Win</th>
+	            		<th>Loss</th>
+	            		<th>Draw</th>
+	          		</tr>
+	        	</thead>
+		        <tbody>
+		          	<tr>
+		            	<td>Player 1</td>
+		            	<td id="p1win"></td>
+		            	<td id="p1loss"></td>
+		            	<td id="p1draw"></td>
+		          	</tr>
+		            <tr>
+		            	<td>Player 2</td>
+		            	<td id="p2win"></td>
+		            	<td id="p2loss"></td>
+		            	<td id="p2draw"></td>
+		          	</tr>
+		        </tbody>
+	      	</table>
+	    </div>
+
+	    <div class="winModal" id="winnerModal">
+	      	<div class="modalContent">
+	        	<span class="closeModal">&times;</span>
+	        	<p id="modalText"></p>
+	      	</div>
+	    </div>
+    </div>
+
+
+<% include ../views/partials/footer.ejs %>
