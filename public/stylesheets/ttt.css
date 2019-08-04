@@ -1,5 +1,5 @@
 #ticTacToe {
-  height: 100%;
+  min-height: 100vh;
   padding-top: 15vh;
   padding-bottom: 20px;
   align-items: center;
@@ -13,19 +13,18 @@
 
 .mainButton {
     background-color: #59ace0;
+    border: 1px solid #59ace0;
     border-radius: 4px;
     color: white;
     font-size: 1em;
     height: 35px;
     width: 80px;
     margin: 5px;
-    border: 0px solid white;
 }
 
 .mainButton:focus {
   outline: none;
 }
-
 
 /*.mainButton:hover {
     background-color: #247aaf;
@@ -127,8 +126,7 @@ button {
   font-weight: bold;
 }
 
-.closeModal:hover,
-.closeModal:focus {
+.closeModal:hover, .closeModal:focus {
   color: #666;
   text-decoration: none;
   cursor: pointer;
@@ -148,9 +146,6 @@ button {
     width: 60px;
     height: 60px;
   }
-  footer {
-    display: none;
-  }
   .ttbox {
     font-size: 2em;
   }
@@ -160,16 +155,21 @@ button {
     width: auto;
     padding: 5px 8px;
   }
-  header nav {
-    display: none;
-  }
   #scoreArea {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 20px;
   }
   #scoreBoard {
     font-size: 0.8em;
   }
+
+  @media (max-height: 450px) {
+    header nav {
+      display: none;
+    }
+    #ticTacToe {
+      padding-top: 20vh;
+    }
 }
 
 

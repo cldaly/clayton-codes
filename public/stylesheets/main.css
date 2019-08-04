@@ -167,23 +167,27 @@ footer a {
     flex-direction: column;
   }
   footer p {
-    margin-top: 10px;
     text-align: center;
   }
   footer ul li {
     margin: 0 10px;
   }
-  #footerIcons{
-    margin-top: 10px;
-  }
   #footerUnsplash{
+    margin-top: 10px;
     order: 2;
   }
   #footerDev{
     order: 1;
   }
   #footerIcons{
+    font-size: 0.9em;
+    margin-top: 10px;
     order: 3;
+  }
+  @media (max-height: 450px) {
+    #footerIcons, #footerUnsplash {
+      display: none;
+    }
   }
 }
 
@@ -482,6 +486,8 @@ footer a {
 }
 
 #contactMain li i {
+  font-size: 1.3em;
+  color: #152a47;
   width: 20px;
   margin: 5px;
 }
