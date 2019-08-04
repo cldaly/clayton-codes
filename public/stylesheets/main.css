@@ -164,7 +164,7 @@ footer a {
     padding-bottom: 12vh;
   }
   footer {
-    height: 12vh;
+    height: auto;
     flex-direction: column;
   }
   footer p {
