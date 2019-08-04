@@ -176,6 +176,15 @@ footer a {
   #footerIcons{
     margin-top: 10px;
   }
+  #footerUnsplash{
+    order: 2;
+  }
+  #footerDev{
+    order: 1;
+  }
+  #footerIcons{
+    order: 3;
+  }
 }
 
 
