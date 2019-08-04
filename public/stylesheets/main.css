@@ -480,6 +480,7 @@ footer a {
 
 #contactMain li i {
   width: 20px;
+  margin: 5px;
 }
 
 @media (max-width: 900px) {
@@ -488,7 +489,7 @@ footer a {
   }
   #contactMain ul {
     margin-top: 20px;
-    margin-left: 5px;
+    margin-left: 0;
   }
 }
 
