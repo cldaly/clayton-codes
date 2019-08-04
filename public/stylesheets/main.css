@@ -160,7 +160,7 @@ footer a {
 
 @media (max-width: 900px) {
   body {
-    padding-bottom: 10vh;
+    padding-bottom: 12vh;
   }
   footer {
     height: auto;
