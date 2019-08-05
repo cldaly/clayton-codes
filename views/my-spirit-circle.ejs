@@ -1,0 +1,74 @@
+<% include ../views/partials/header.ejs %>
+
+
+<section class="projectSection" id="mySpiritCircle">
+	<div class="projectMain">
+		<div class="projectHeader">
+			<img src="../img/my-spirit-circle-small.png">
+			<div class="projectHeaderContent">
+				<h2>My Spirit Circle</h2>
+				<p><strong>Status:</strong> Work in progress</p>
+				<p><strong>Brief:</strong> All Development and Design done by Clayton Daly; My Spirit Circle is a one-stop-shop type marketplace to help connect spiritual healers with clients.</p>
+				<p><strong>The goal</strong> of this web application is to expand upon the web development concepts, both front-end and back-end, that I have learned so far, and apply them to a real work application.</p>
+			</div>
+		</div>
+		<div class="projectDetails">
+			<div class="projectDescription">
+				<h3>Project Description</h3>
+				<p>My Spirit Circle is a personal project I embarked on in July 2019 as both a business idea and a project to further learn about full stack web development. This web application will operate as a one-stop-shop type marketing platform for individuals practicing Spiritual Healing, and will allow them to connect with clients.</p>
+				<p>The early phases of this project so far have mostly consisted of design and front end aspects. My Spirit Circle is built using Node.js and Express.js, and will soon be integrated with MySQL to create user functionality.</p>
+				<p>Currently, I am completing static versions of the web pages a user will need to interface with service providers (some seen below). Soon, I will integrate these routes with MySQL to dynamic application that will allow users to create profiles and will allow service providers to create their own classes and services to provide.</p>
+				<p>Future projects include designing and developing an internal messaging platform, and integrating a video chat type feature to allow service providers to hold classes and sessions with their clients.</p>
+			</div>
+			<div class="projectTech">
+				<h3>Technologies Used</h3>
+				<ul>
+					<li>Node.js</li>
+					<li>Express.js</li>
+					<li>MySQL</li>
+					<li>HTML & CSS</li>
+					<li>Bootstrap 3</li>
+					<li>Javascript</li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<div class="projectGallery">
+			<h3>Image Gallery</h3>
+			<div class="galleryMain">
+				<div class="projectImg">
+					<img src="../img/my-spirit-circle-01.png" onclick="window.open('/img/my-spirit-circle-01.png', '_blank');">
+					<p class="projectImgInfo">My Spirit Circle's landing page which will feature a search bar and toggle between local and online service search.</p>
+					<hr>
+				</div>
+				<div class="projectImg">
+					<img src="../img/my-spirit-circle-02.png" onclick="window.open('/img/my-spirit-circle-02.png', '_blank');">
+					<p class="projectImgInfo">The landing page will also feature a section showcasing the site's most popular services, with a link to more service. Further down the landing page will hold an "about" section, as well as a short email form for those interested in becoming a service provider.</p>
+					<hr>
+				</div>
+				<div class="projectImg">
+					<img src="../img/my-spirit-circle-03.png" onclick="window.open('/img/my-spirit-circle-03.png', '_blank');">
+					<p class="projectImgInfo">Utilizing the capabilities of flex-box, the early stages of the services page will provide the user with a list of classes and services provided by various providers. Users can select certain services as favorites, and can refine their search with the comprehensive search bar on the left.</p>
+					<hr>
+				</div>
+				<div class="projectImg">
+					<img src="../img/my-spirit-circle-04.png" onclick="window.open('/img/my-spirit-circle-04.png', '_blank');">
+					<p class="projectImgInfo">All pages will be responsive to mobile screen sizes, as seen here.</p>
+					<hr>
+				</div>
+				<div class="projectImg">
+					<img src="../img/my-spirit-circle-05.png" onclick="window.open('/img/my-spirit-circle-05.png', '_blank');">
+					<p class="projectImgInfo">An early version of a user profile, which will feature user information, a list of services they provide, as well as a review section complete with comments.</p>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="backBtn">
+	    <a href="/"><i class="far fa-arrow-alt-circle-left"></i> Back</a>
+	</div>
+</section>
+
+
+
+<% include ../views/partials/footer.ejs %>
