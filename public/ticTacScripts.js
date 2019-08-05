@@ -59,15 +59,21 @@ function resetGame() {
 	clearBoard();
 }
 
-function clearBoard() {
+function clearBoard(prevWinner) {
 	for (var i = 0; i < boardList.length; i++) {
 		document.getElementById(boardList[i]).innerHTML= "";
 	}
 	resetColor();
-	turnNumber = 0;
-	playerTurn = 1;
 	if (gameRunning) {
-		document.getElementById("playerTurnText").innerHTML = "Player 1's Turn (X)";
+		if(prevWinner == 2) {
+			document.getElementById("playerTurnText").innerHTML = "Player 2's Turn (O)";
+			playerTurn = 2;
+		} else {
+			document.getElementById("playerTurnText").innerHTML = "Player 1's Turn (X)";
+			playerTurn = 1;
+		}
+	} else {
+		playerTurn = 1;
 	}
 }
 
@@ -106,8 +112,8 @@ function addMarker(cellName) {
 		if (document.getElementById(cellName).innerHTML == "") {
 			if (playerTurn == 1) {
 				document.getElementById(cellName).innerHTML = "X";
-				playerTurn = 2;
 				turnNumber++;
+				playerTurn = 2;
 				checkForWinner();
 				if (turnNumber != 0) {
 					document.getElementById("playerTurnText").innerHTML = "Player 2's Turn (O)";
@@ -116,8 +122,8 @@ function addMarker(cellName) {
 			}
 			else {
 				document.getElementById(cellName).innerHTML = "O";
-				playerTurn = 1;
 				turnNumber++;
+				playerTurn = 1;
 				checkForWinner();
 				if (turnNumber != 0) {
 					document.getElementById("playerTurnText").innerHTML = "Player 1's Turn (X)";
@@ -228,11 +234,13 @@ function playerWins(x_or_o) {
 		winningPlayer = 1;
 		p1win++;
 		p2loss++;
+		turnNumber = 0;
 		winnerPopup(winningPlayer);
 	} else {
 		winningPlayer = 2;
 		p2win++;
 		p1loss++;
+		turnNumber = 0;
 		winnerPopup(winningPlayer);
 	}
 }
@@ -266,7 +274,7 @@ function winnerPopup(winner) {
 	span.onclick = function() {
 	  	modal.style.display = "none";
 	  	updateScoreBoard();
-	  	clearBoard();
+	  	clearBoard(winner);
 	}
 
 	// When the user clicks anywhere outside of the modal, close it
@@ -274,7 +282,7 @@ function winnerPopup(winner) {
 	  	if (event.target == modal) {
 	    	modal.style.display = "none";
 	    	updateScoreBoard();
-			clearBoard();
+			clearBoard(winner);
 		}
 	}
 }
