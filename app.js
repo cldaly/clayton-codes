@@ -35,6 +35,6 @@ app.get("/*", function(req, res){
 	res.redirect("/");
 });
 
-app.listen(4000, function(){
+app.listen(port, function(){
 	console.log("Server running, port 4000");
 });
