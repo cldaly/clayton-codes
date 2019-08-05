@@ -25,7 +25,7 @@ function startGame() {
 
 		document.getElementById("playerTurnText").innerHTML = "Player 1's Turn (X)";
 
-		document.getElementById("scoreArea").style.display = "block";
+		document.getElementById("scoreArea").style.visibility = "visible";
 
 		// var versusPlayer = document.getElementById("twoPlayer").checked;
 		initializeBoard();
@@ -44,9 +44,9 @@ function resetGame() {
 	startButton.innerHTML = "Start!";
 	startButton.style.backgroundColor = "#59ace0";
 	startButton.style.color = "white";
-	startButton.style.border = "none";
+	startButton.style.border = "1px solid #59ace0";
 	document.getElementById("playerTurnText").innerHTML = "";
-	document.getElementById("scoreArea").style.display = "none";
+	document.getElementById("scoreArea").style.visibility = "hidden";
 	turnNumber = 0;
 	playerTurn = 1;
 	p1win = 0;

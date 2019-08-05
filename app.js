@@ -17,12 +17,12 @@ app.get("/", function(req, res){
 
 // My Spirit Circle
 app.get("/my-spirit-circle", function(req, res){
-	res.render("my-spirit-circle");
+	res.render("my-spirit-circle", {titleAddon: "My Spirit Circle"});
 });
 
 // Riley's Candles
 app.get("/rileys-candles", function(req, res){
-	res.render("rileys-candles");
+	res.render("rileys-candles", {titleAddon: "Riley's Candles"});
 });
 
 // Tic Tac Toe

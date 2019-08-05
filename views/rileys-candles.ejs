@@ -1,0 +1,69 @@
+<% include ../views/partials/header.ejs %>
+
+
+<section class="projectSection" id="rileysCandles">
+	<div class="projectMain">
+		<div class="projectHeader">
+			<img src="../img/rileys-candles-small.png">
+			<div class="projectHeaderContent">
+				<h2>Riley's Candles</h2>
+				<p><strong>Class:</strong> Harvard CS50 - Introduction to Computer Science</p>
+				<p><strong>Brief:</strong> Riley's Candles is a simple e-commerce type web app designed for a final class project, built off of Flask and Python, utilizing Sqlite3 and Javascript for functionality.</p>
+				<p><strong>The goal</strong> for this project was to gain a better understanding of back-end logic, how to utilize a framework such as flask to create web applications, and how to utilize databases to create dynamic applications.</p>
+			</div>
+		</div>
+		<div class="projectDetails">
+			<div class="projectDescription">
+				<h3>Project Description</h3>
+				<p>Roughly 90% of this whole project's code was written by myself, with the rest provided by the class as a starter template. This project was built as an e-commerce type web application, allowing theoretical users to purchase a seller's candles.</p>
+				<p>The web app features user authentication to allow access to a personalized web portal. The user, once given access, was allowed to make purchases, add funds to their account, and browse their user history.</p>
+				<p>The owner of the web app also had access to an admin portal, which allowed them to view a sales summary, check inventory, restock candles, and to add new candles into their inventory.</p>
+				<p>The basic web layout follows standard RESTful web service practices. Main functionality and logic involved reading and writing to three main database collections (user data, transaction history, and product inventory database collections) built in Sqlite3 using Python.</p>
+			</div>
+			<div class="projectTech">
+				<h3>Technologies Used</h3>
+				<ul>
+					<li>Python</li>
+					<li>Flask</li>
+					<li>Sqlite3</li>
+					<li>HTML & CSS</li>
+					<li>Bootstrap 3</li>
+					<li>Javascript</li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<div class="projectGallery">
+			<h3>Image Gallery</h3>
+			<div class="galleryMain">
+				<div class="projectImg">
+					<img src="../img/rileys-candles-01.png" onclick="window.open('/img/rileys-candles-01.png', '_blank');">
+					<p class="projectImgInfo">A simple landing page for our user. User data, such as store credit balance and admin status will be pulled from Sqlite3, to create content seen above.</p>
+					<hr>
+				</div>
+				<div class="projectImg">
+					<img src="../img/rileys-candles-02.png" onclick="window.open('/img/rileys-candles-02.png', '_blank');">
+					<p class="projectImgInfo">Form used prior to purchase, utilizes Javascript to cross check user funds, and will confirm purchase can be made.</p>
+					<hr>
+				</div>
+				<div class="projectImg">
+					<img src="../img/rileys-candles-03.png" onclick="window.open('/img/rileys-candles-03.png', '_blank');">
+					<p class="projectImgInfo">Users with admin access will be able to view sales dashboards such as this above, based on transaction data pulled from Sqlite3.</p>
+					<hr>
+				</div>
+				<div class="projectImg">
+					<img src="../img/rileys-candles-04.png" onclick="window.open('/img/rileys-candles-04.png', '_blank');">
+					<p class="projectImgInfo">Admins will also be able to add new products to their inventory with the form above, which will write a new line to the inventory database.</p>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="backBtn">
+	    <a href="/"><i class="far fa-arrow-alt-circle-left"></i> Back</a>
+	</div>
+</section>
+
+
+
+<% include ../views/partials/footer.ejs %>

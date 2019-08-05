@@ -1,5 +1,5 @@
 #ticTacToe {
-  min-height: 100vh;
+  min-height: 100%;
   padding-top: 15vh;
   padding-bottom: 20px;
   align-items: center;
@@ -89,7 +89,7 @@ button {
 }
 
 #scoreArea {
-	display: none;
+	visibility: hidden;
 }
 
 /*For the Winner Modal Popup*/
@@ -170,6 +170,10 @@ button {
     #ticTacToe {
       padding-top: 20vh;
     }
+    #footerUnsplash,#footerIcons {
+      display: none;
+    }
+  }
 }
 
 
