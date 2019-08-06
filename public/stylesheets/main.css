@@ -144,6 +144,15 @@ header nav li {
   }
 }
 
+@media (max-width: 400px) {
+  header nav li {
+    margin: 0 10px;
+  }
+  header nav {
+    font-size: 0.9em;
+  }
+}
+
 
 /* Footer */
 
@@ -253,6 +262,8 @@ footer a {
   font-weight: 400;
   font-size: 4rem;
   margin-bottom: 10px;
+  letter-spacing: 0.1em;
+  color: #000;
 }
 
 #landingMain {
@@ -281,11 +292,6 @@ footer a {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-image: url("../img/unsplash-landing-01.jpeg");
-}
-
-#landingMain h1 {
-  letter-spacing: 0.1em;
-  color: #000;
 }
 
 #learnMore {
@@ -329,6 +335,13 @@ footer a {
   #learnMore a {
     padding: 6px 8px;
     font-size: 0.8em;
+  }
+}
+
+@media (max-width: 400px) {
+  #landingTitle {
+    font-size: 2.5rem;
+    letter-spacing: 0.05em;
   }
 }
 
@@ -769,7 +782,7 @@ footer a {
   }
   @media (max-height: 450px) {
     .projectMain {
-      margin-top: 15vh;
+      margin-top: 18vh;
     }
   }
 }
