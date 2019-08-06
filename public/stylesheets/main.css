@@ -334,7 +334,7 @@ footer a {
 
 /* ABOUT SECTION */
 
-#aboutSection {
+#about {
   width: 80%;
   max-width: 1000px;
   display: -webkit-box;
@@ -349,7 +349,7 @@ footer a {
   padding-top: 0;
 }
 
-#aboutSection img {
+#about img {
   margin-top: 8vh;
   height: auto;
   width: 300px;
@@ -414,10 +414,10 @@ footer a {
 }
 
 @media (max-width: 900px) {
-  #aboutSection {
+  #about {
     width: 95%;
   }
-  #aboutSection img {
+  #about img {
     width: 250px;
     margin-top: 40px;
   }
