@@ -100,6 +100,7 @@ header {
 }
 
 header h2 {
+  font-size: 1.6em;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -133,11 +134,11 @@ header nav li {
     padding-bottom: 5px;
   }
   header nav {
-    font-size: 0.8em;
+    margin: 5px 0;
+    font-size: 1em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 0;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -320,7 +321,7 @@ footer a {
 
 @media (max-width: 900px) {
   #landingTitle {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
   }
   #landingMain p {
     font-size: 1em;
@@ -673,12 +674,6 @@ footer a {
   margin-bottom: 20px;
 }
 
-.projectHeader img {
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
-}
-
 .projectHeaderContent {
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
@@ -697,6 +692,9 @@ footer a {
 }
 
 .projectHeader img {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
   width: 400px;
   height: auto;
   border-radius: 5px;
@@ -744,7 +742,7 @@ footer a {
   }
   .projectMain {
     width: 100%;
-    margin-top: 10vh;
+    margin-top: 12vh;
     padding: 15px 5px 10px;
   }
   .projectHeader {
@@ -768,6 +766,11 @@ footer a {
   }
   .projectDetails {
     padding: 20px 10px;
+  }
+  @media (max-height: 450px) {
+    .projectMain {
+      margin-top: 15vh;
+    }
   }
 }
 
