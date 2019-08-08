@@ -386,6 +386,7 @@ footer a {
 }
 
 #techListBtn {
+  background-color: #fff;
   cursor: pointer;
   border: 1px solid #333;
   border-radius: 4px;
