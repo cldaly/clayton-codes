@@ -3,7 +3,7 @@ var express = require("express"),
 
 // set the port of our application
 // process.env.PORT lets the port be set by Heroku
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 3000;
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
@@ -36,5 +36,5 @@ app.get("/*", function(req, res){
 });
 
 app.listen(port, function(){
-	console.log("Server running, port 4000");
+	console.log("Server running");
 });
