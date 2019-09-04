@@ -191,10 +191,6 @@ footer p {
   opacity: 0.8;
 }
 
-footer a {
-  color: #000;
-}
-
 #footerUnsplash{
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
