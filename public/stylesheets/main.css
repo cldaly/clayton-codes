@@ -476,6 +476,9 @@ footer p {
   #techListContent {
     font-size: 0.9em;
   }
+}
+
+@media only screen and (max-width:768px) {
   #techListContent .tech-row {
     display:-webkit-box;
     display:-ms-flexbox;
@@ -493,7 +496,7 @@ footer p {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 600px) {
   #techListBtn {
     width: 80%;
     word-wrap: normal;
