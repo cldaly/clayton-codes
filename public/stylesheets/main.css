@@ -493,7 +493,7 @@ footer p {
   }
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   #techListBtn {
     width: 80%;
     word-wrap: normal;
@@ -914,10 +914,19 @@ footer p {
 }
 
 .imgGroup {
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 80%;
   margin: 0 auto;
 }
