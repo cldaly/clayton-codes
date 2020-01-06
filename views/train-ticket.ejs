@@ -1,0 +1,62 @@
+<% include ../views/partials/header.ejs %>
+
+
+<section class="projectSection" id="trainTicket">
+	<div class="projectMain">
+		<div class="projectHeader">
+			<img src="../img/train-ticket-small.png">
+			<div class="projectHeaderContent">
+				<h2>Train Ticket Generator</h2>
+				<p><strong>Brief:</strong> A user will be able to generate a train ticket based on train data saved to an Oracle SQL database. A form is dynamically created based on the number of passengers, and the final ticket is saved to the user's Downloads folder.</p>
+				<p><strong>The goal</strong> for this project was to create a simple web application using Java, JSP, Oracle SQL, and JavaScript.</p>
+				<p><a class="gitRepo" href="https://github.com/cldaly/TrainTicket" target="_blank"><i class="fab fa-github"></i> View GitHub Repository</a></p>
+			</div>
+		</div>
+		<div class="projectDetails">
+			<div class="projectDescription">
+				<h3>Project Description</h3>
+				<p>This project was built as a Java Dynamic Web Project using Eclipse. Basic logic is performed in a JSP Servlet file, and communites to an Oracle SQL database with a DAO jdbc class.</p>
+                <p>This project uses JavaScript to display the form for the user and set date constraints in the user's form. The form will also change dynamically depending on the number of passengers a user wants to add to a ticket.</p>
+                <p>Once the ticket has been generated as a method of the Ticket Java class, it will be displayed on the web app for the user, and will also be saved to the downloads folder by using a Buffered File Writer.</p>
+			</div>
+			<div class="projectTech">
+				<h3>Technologies Used</h3>
+				<ul>
+					<li>Java</li>
+					<li>JavaServer Pages (JSP)</li>
+					<li>Oracle SQL</li>
+					<li>JavaScript</li>
+					<li>HTML & CSS</li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<div class="projectGallery">
+			<h3>Image Gallery</h3>
+			<div class="galleryMain">
+				<div class="projectImg">
+					<img src="../img/train-ticket-01.png">
+					<p class="projectImgInfo">The landing page for the user. The train ticket form will be displayed when the user clicks the 'Generate' button</p>
+					<hr>
+				</div>
+				<div class="projectImg">
+					<img src="../img/train-ticket-02.png">
+					<p class="projectImgInfo">The train ticket form. The date field will be configured using the user's current date, and the passenger inputs will udate based on the number of passengers selected. The form updates with JavaScript</p>
+					<hr>
+				</div>
+				<div class="projectImg">
+					<img src="../img/train-ticket-03.png">
+					<p class="projectImgInfo">The final ticket generated for the user, of which a copy has been saved to their Downloads folder.</p>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="backBtn">
+	    <a href="/#projects"><i class="far fa-arrow-alt-circle-left"></i> Back</a>
+	</div>
+</section>
+
+
+
+<% include ../views/partials/footer.ejs %>

@@ -15,6 +15,11 @@ app.get("/", function(req, res){
 	res.render("landing");
 });
 
+// Train Ticket
+app.get("/train-ticket", function(req, res){
+	res.render("train-ticket", {titleAddon: "Train Ticket"});
+});
+
 // My Spirit Circle
 app.get("/my-spirit-circle", function(req, res){
 	res.render("my-spirit-circle", {titleAddon: "My Spirit Circle"});
