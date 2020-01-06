@@ -379,7 +379,11 @@ footer p {
 }
 
 #technologiesList {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin: 20px auto;
+  width: 100%;
 }
 
 #techListBtn {
@@ -415,13 +419,50 @@ footer p {
 }
 
 #techListContent {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   max-height: 0;
   overflow: hidden;
-  padding: 0 40px;
   text-align: left;
   -webkit-transition: max-height 0.5s ease-in;
   -o-transition: max-height 0.5s ease-in;
   transition: max-height 0.5s ease-in;
+}
+
+#techListContent .tech-row {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#techListContent .tech-row .tech-container {
+  min-width: 200px;
+  margin: 10px 25px;
+}
+
+#techListContent .tech-row .tech-container ul {
+  margin-top: 5px;
 }
 
 @media (max-width: 900px) {
@@ -431,6 +472,32 @@ footer p {
   #about img {
     width: 250px;
     margin-top: 40px;
+  }
+  #techListContent {
+    font-size: 0.9em;
+  }
+  #techListContent .tech-row {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  #techListBtn {
+    width: 80%;
+    word-wrap: normal;
+    margin: 0 auto;
   }
 }
 
