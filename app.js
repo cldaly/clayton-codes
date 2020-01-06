@@ -15,6 +15,11 @@ app.get("/", function(req, res){
 	res.render("landing");
 });
 
+// Musix App
+app.get("/musix-app", function(req, res){
+	res.render("musix-app", {titleAddon: "Musix App"});
+});
+
 // Train Ticket
 app.get("/train-ticket", function(req, res){
 	res.render("train-ticket", {titleAddon: "Train Ticket"});

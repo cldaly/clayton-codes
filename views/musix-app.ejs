@@ -1,0 +1,82 @@
+<% include ../views/partials/header.ejs %>
+
+
+<section class="projectSection" id="musixApp">
+	<div class="projectMain">
+		<div class="projectHeader">
+			<img src="../img/musix-app-small.png">
+			<div class="projectHeaderContent">
+				<h2>Musix App</h2>
+				<p><strong>Brief:</strong> An Angular / Spring Boot application for users to find and save their favorite music albums.</p>
+				<p><strong>The goal</strong> for this project was to create a web app that communicates with a third party api, and performs CRUD operations with a REStful backend api.</p>
+				<p><a class="gitRepo" href="https://github.com/cldaly/MusixApp" target="_blank"><i class="fab fa-github"></i> View GitHub Repository</a></p>
+			</div>
+		</div>
+		<div class="projectDetails">
+			<div class="projectDescription">
+				<h3>Project Description</h3>
+				<p>There are two parts to this project. The frontend was created using Angular, and pulls albums from last.fm's api using search criteria provided by the user. Album cards will be generated on the search page, and clicking the album will run another api get request to populate the tracklist for that album.</p>
+                <p>The user can register and login to create their own profile, which will allow them to save albums that they like. Their album list can then be viewed and altered accordingly. If the user is logged in and creates a new search, albums that have already been saved will be notated accordingly, and can be unsaved.</p>
+                <p>The users and saved albums are stored in a MySql database through a Java / Spring Boot backend. The backend follows RESTful API structure, and is implemented using Spring Web, JPA, Security, and jjwt tokens for user authentication.</p>
+			</div>
+			<div class="projectTech">
+				<h3>Technologies Used</h3>
+				<ul>
+                    <li>Java</li>
+                    <li>Spring Boot</li>
+                    <li>Spring JPA & Security</li>
+                    <li>JSON Web Token (jjwt)</li>
+                    <li>JavaScript & TypeScript</li>
+                    <li>Angular</li>
+					<li>MySQL</li>
+					<li>HTML5 & CSS3</li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<div class="projectGallery">
+			<h3>Image Gallery</h3>
+			<div class="galleryMain">
+				<div class="projectImg">
+					<img src="../img/musix-app-01.png">
+					<p class="projectImgInfo">A logged in user can view albums that they have saved. Clicking an album will pull up the tracklist, and the user can un-save the album if they choose.</p>
+					<hr>
+				</div>
+				<div class="projectImg">
+					<img src="../img/musix-app-02.png">
+					<p class="projectImgInfo">The results for a search being displayed. Search criteria is sent to last.fm api and album data is returned. This data is converted into album cards for the user. If a user is logged in, they will be able to save albums they like. Albums that have already been saved will be given the option to un-save, as seen above.</p>
+					<hr>
+				</div>
+				<div class="projectImg">
+                    <div class="imgGroup">
+                        <img src="../img/musix-app-03.png">
+                        <img src="../img/musix-app-04.png">
+                    </div>
+					<p class="projectImgInfo">Login and register forms provided for the user. Registering will give the user the option of uploading a profile picture. Login services will generate a jjwt token through the backend with Spring Security for user authentication.</p>
+					<hr>
+                </div>
+				<div class="projectImg">
+                    <div class="imgGroup">
+                        <img src="../img/musix-app-05.png">
+                        <img src="../img/musix-app-06.png">
+                    </div>
+					<p class="projectImgInfo">The application features an alert box to communicate messages with the user. The message will close itself after a set amount of time. Users can also view tracklistings for each album as seen above.</p>
+					<hr>
+				</div>
+
+                <div class="projectImg">
+					<img src="../img/musix-app-07.png">
+					<p class="projectImgInfo">A user profile will all for password changes, profile picture updates, and will allow the user to delete their profile.</p>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="backBtn">
+	    <a href="/#projects"><i class="far fa-arrow-alt-circle-left"></i> Back</a>
+	</div>
+</section>
+
+
+
+<% include ../views/partials/footer.ejs %>

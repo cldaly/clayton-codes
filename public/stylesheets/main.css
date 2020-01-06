@@ -913,6 +913,20 @@ footer p {
   margin: 0 auto;
 }
 
+.imgGroup {
+  display:flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.projectImg .imgGroup img {
+  width: 50%;
+  margin: 0 5px 15px;
+}
+
 .projectGallery hr {
     margin: 25px auto 0;
     border: 0;
@@ -925,7 +939,10 @@ footer p {
 
 @media (max-width: 900px) {
   .projectImg img {
-    width: 95%;
+    width: 100%;
+  }
+  .imgGroup {
+    width: 100%;
   }
   .projectGallery {
     padding: 20px 10px;
@@ -933,6 +950,7 @@ footer p {
   .projectImgInfo {
     width: 90%;
   }
+  
 }
 
 
