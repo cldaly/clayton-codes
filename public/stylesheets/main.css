@@ -665,6 +665,7 @@ footer p {
         -ms-flex-align: center;
             align-items: center;
     letter-spacing: 0.05em;
+    text-align: center;
   }
   .cardImg {
     -webkit-box-ordinal-group: 3;
