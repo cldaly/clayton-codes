@@ -826,7 +826,7 @@ footer p {
 }
 
 .projectTech ul {
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .projectTech ul li {
@@ -880,6 +880,10 @@ footer p {
   }
   .projectDetails {
     padding: 20px 10px;
+  }
+  .projectTech {
+    width: 80%;
+    margin:0 auto;
   }
   .gitRepo {
     padding-top: 10px;
