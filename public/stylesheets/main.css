@@ -46,8 +46,8 @@ hr {
     border: 0;
     height: 2px;
     width: 90%;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(21, 42, 71, 0)), color-stop(rgba(21, 42, 71, 0.75)), to(rgba(21, 42, 71, 0)));
     background-image: -o-linear-gradient(left, rgba(21, 42, 71, 0), rgba(21, 42, 71, 0.75), rgba(21, 42, 71, 0));
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(21, 42, 71, 0)), color-stop(rgba(21, 42, 71, 0.75)), to(rgba(21, 42, 71, 0)));
     background-image: linear-gradient(to right, rgba(21, 42, 71, 0), rgba(21, 42, 71, 0.75), rgba(21, 42, 71, 0));
 }
 
@@ -419,28 +419,27 @@ footer p {
 }
 
 #techListContent {
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  max-height: 0;
-  overflow: hidden;
+  margin: 0 auto;
+  width:-webkit-fit-content;
+  width:-moz-fit-content;
+  width:fit-content;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   text-align: left;
-  -webkit-transition: max-height 0.5s ease-in;
-  -o-transition: max-height 0.5s ease-in;
-  transition: max-height 0.5s ease-in;
 }
 
-#techListContent .tech-row {
+.tech-row {
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
@@ -456,13 +455,27 @@ footer p {
           justify-content: space-evenly;
 }
 
-#techListContent .tech-row .tech-container {
-  min-width: 200px;
-  margin: 10px 25px;
+#tech-header {
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  margin: 0 auto 15px;
 }
 
-#techListContent .tech-row .tech-container ul {
+.tech-container {
+  margin: 10px 20px;
+}
+
+.tech-container:nth-child(1) {
+  width: 220px;
+}
+
+.tech-container ul {
   margin-top: 5px;
+}
+
+.tech-container h4 {
+  font-size: 1.1em;
 }
 
 @media (max-width: 900px) {
@@ -476,31 +489,39 @@ footer p {
   #techListContent {
     font-size: 0.9em;
   }
-}
-
-@media only screen and (max-width:768px) {
-  #techListContent .tech-row {
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+  #tech-header {
+    width: 80%;
+    font-size: 1.2em;
+    letter-spacing: 0.02em;
+  }
+  .tech-container:nth-child(1) {
+    width: 180px;
+  }
+  .tech-container h4 {
+    font-size: 1em;
   }
 }
+
 
 @media (max-width: 600px) {
   #techListBtn {
     width: 80%;
     word-wrap: normal;
     margin: 0 auto;
+  }
+  .tech-row {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .tech-container {
+    margin: 8px 10px;
+  }
+  .tech-container li {
+    font-size: 0.95em;
+  }
+  .tech-container:nth-child(1){
+    width: 150px;
   }
 }
 
@@ -816,6 +837,10 @@ footer p {
   color: #eee;
 }
 
+.gitRepo {
+  padding-top: 10px;
+  font-size: 1.25em;
+}
 
 @media (max-width: 900px) {
   .projectHeader img {
@@ -856,6 +881,12 @@ footer p {
   .projectDetails {
     padding: 20px 10px;
   }
+  .gitRepo {
+    padding-top: 10px;
+    font-size: 1.15em;
+    text-align: center;
+  }
+
   @media (max-height: 450px) {
     .projectMain {
       margin-top: 18vh;
@@ -944,8 +975,8 @@ footer p {
     border: 0;
     height: 1px;
     width: 90%;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(52, 79, 117, 0)), color-stop(rgba(52, 79, 117, 0.75)), to(rgba(52, 79, 117, 0)));
     background-image: -o-linear-gradient(left, rgba(52, 79, 117, 0), rgba(52, 79, 117, 0.75), rgba(52, 79, 117, 0));
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(52, 79, 117, 0)), color-stop(rgba(52, 79, 117, 0.75)), to(rgba(52, 79, 117, 0)));
     background-image: linear-gradient(to right, rgba(52, 79, 117, 0), rgba(52, 79, 117, 0.75), rgba(52, 79, 117, 0));
 }
 
@@ -964,9 +995,3 @@ footer p {
   }
   
 }
-
-
-
-
-
-
