@@ -15,6 +15,11 @@ app.get("/", function(req, res){
 	res.render("landing");
 });
 
+// Full Stack of Cards
+app.get("/full-stack-cards", function(req, res){
+	res.render("full-stack-cards", {titleAddon: "Full Stack of Cards"});
+});
+
 // Musix App
 app.get("/musix-app", function(req, res){
 	res.render("musix-app", {titleAddon: "Musix App"});

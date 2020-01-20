@@ -1,0 +1,75 @@
+<% include ../views/partials/header.ejs %>
+
+
+<section class="projectSection" id="fullstackCards">
+	<div class="projectMain">
+		<div class="projectHeader">
+			<img src="../img/full-stack-cards-small.png">
+			<div class="projectHeaderContent">
+				<h2>Full Stack of Cards</h2>
+				<p><strong>Brief:</strong> Flash cards for Full Stack Java Developers. Built with JavaScript, Java, ReactJS, Spring Boot, and MongoDB. All design and styling custom created and without the use of Bootstrap/Material or any similar library.</p>
+				<p><strong>The goal</strong> for this project was to create a full stack web application with ReactJS on the front end, that could also assist in interview preparation.</p>
+				<p class="gitRepo"><a href="https://github.com/cldaly/FullStackOfCards" target="_blank"><i class="fab fa-github"></i> View GitHub Repository</a></p>
+			</div>
+		</div>
+		<div class="projectDetails">
+			<div class="projectDescription">
+				<h3>Project Description</h3>
+				<p>This project was primarily undertaken as a means of practicing React on the front end, as well as Spring Boot / MongoDB on the back end. This project simply offers a UI for a user to practice interview questions for a Java Developer role.</p>
+                <p>The back end was built in Java, using Spring Boot's RESTapi services. Flash Cards are read, updated, retrieved, and deleted to a MongoDB database using MongoRepository interface. There is also a simple User controller that allows for the login and registration of new users. Forms feature custom validation on the front end, along with messages to aid in UX.</p>
+                <p>When a user enters the web app, all flash cards will be pulled from the database. Random flash cards will be pulled and generated for the user. The flash card's unique ID will be logged into an array and checked to ensure each card gets displayed once every cycle of cards. Users that are logged in can add new flash cards to the database, and can also view the cards they have added. They can search through, edit, and delete their cards through their user portal.</p>
+			</div>
+			<div class="projectTech">
+				<h3>Technologies Used</h3>
+				<ul>
+					<li>JavaScript</li>
+					<li>ReactJS</li>
+					<li>Java</li>
+                    <li>Spring Boot</li>
+                    <li>MongoDB</li>
+					<li>HTML5 & CSS3</li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<div class="projectGallery">
+			<h3>Image Gallery</h3>
+			<div class="galleryMain">
+				<div class="projectImg">
+					<img src="../img/full-stack-cards-01.png">
+					<p class="projectImgInfo">The landing page for this app features a slick loading animation for the user, as they proceed into the application</p>
+					<hr>
+				</div>
+				<div class="projectImg">
+                    <div class="imgGroup">
+                        <img src="../img/full-stack-cards-02.png">
+                        <img src="../img/full-stack-cards-03.png">
+                    </div>
+					<p class="projectImgInfo">Once the user has entered the app, all cards in the database will be retrieved, and a random card will be displayed. That card's ID will be logged to ensure cards will not be repeated until the user has gone through all cards</p>
+					<hr>
+                </div>
+				<div class="projectImg">
+					<img src="../img/full-stack-cards-04.png">
+					<p class="projectImgInfo">A logged in user can view all of the cards they have added. A search bar at top will instantly filter the list of flash cards for better access. The user can edit or delete their cards from this page</p>
+					<hr>
+				</div>
+				<div class="projectImg">
+                    <div class="imgGroup">
+                        <img src="../img/full-stack-cards-05.png">
+                        <img src="../img/full-stack-cards-06.png">
+                    </div>
+					<p class="projectImgInfo">The application features a very simple login and registration component, as seen on the left. Once logged in, a user can easily add flash cards to the database with the form on the right. These forms feature custom validation</p>
+					<hr>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="backBtn">
+	    <a href="/#projects"><i class="far fa-arrow-alt-circle-left"></i> Back</a>
+	</div>
+</section>
+
+
+
+<% include ../views/partials/footer.ejs %>
