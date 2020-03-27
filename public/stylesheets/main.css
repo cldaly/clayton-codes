@@ -376,6 +376,9 @@ footer p {
 #aboutMain p {
   text-align: left;
   padding: 10px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  font-size: 1.05em;
 }
 
 #technologiesList {
