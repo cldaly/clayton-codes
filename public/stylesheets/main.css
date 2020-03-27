@@ -489,6 +489,11 @@ footer p {
     width: 250px;
     margin-top: 40px;
   }
+  #aboutMain p {
+    line-height: 24px;
+    letter-spacing: 0em;
+    font-size: 1.02em;
+  }
   #techListContent {
     font-size: 0.9em;
   }
