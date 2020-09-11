@@ -1,10 +1,10 @@
-var express = require("express"),
-	app = express();
+var express = require("express");
+var app = express();
+var enforce = require('express-sslify');
 
-// set the port of our application
-// process.env.PORT lets the port be set by Heroku
 var port = process.env.PORT || 3200;
 
+app.use(enforce.HTTPS({ trustProtoHeader: true }));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 
@@ -51,5 +51,5 @@ app.get("/*", function(req, res){
 });
 
 app.listen(port, function(){
-	console.log("Server running");
+	console.log(`Server running on port ${port}`);
 });

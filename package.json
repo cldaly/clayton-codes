@@ -2,6 +2,10 @@
   "name": "claytoncodes",
   "version": "1.0.0",
   "description": "clayton codes web page",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cldaly/clayton-codes.git"
+  },
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.6.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-sslify": "^1.2.0"
   }
 }
