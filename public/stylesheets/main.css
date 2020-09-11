@@ -518,9 +518,9 @@ footer p {
     margin: 0 auto;
   }
   .tech-row {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .tech-container {
     margin: 8px 10px;
@@ -529,7 +529,7 @@ footer p {
     font-size: 0.95em;
   }
   .tech-container:nth-child(1){
-    width: 150px;
+    width: 120px;
   }
 }
 
