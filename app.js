@@ -2,9 +2,13 @@ var express = require("express");
 var app = express();
 var enforce = require('express-sslify');
 
+// Set port
 var port = process.env.PORT || 3200;
 
+// Force ssl/https redirect
 app.use(enforce.HTTPS({ trustProtoHeader: true }));
+
+// Set app engine + style's dir
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 
