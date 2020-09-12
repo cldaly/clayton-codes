@@ -1,9 +1,9 @@
-var express = require("express");
-var app = express();
-var enforce = require('express-sslify');
+const express = require("express");
+const app = express();
+const enforce = require('express-sslify');
 
 // Set port
-var port = process.env.PORT || 3200;
+const port = process.env.PORT || 3200;
 
 // Force ssl/https redirect
 app.use(enforce.HTTPS({ trustProtoHeader: true }));
