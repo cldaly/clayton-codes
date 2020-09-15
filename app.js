@@ -6,7 +6,7 @@ var enforce = require('express-sslify');
 var port = process.env.PORT || 3200;
 
 // Force ssl/https redirect
-app.use(enforce.HTTPS({ trustProtoHeader: true }));
+// app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
 // Set app engine + style's dir
 app.set("view engine", "ejs");
