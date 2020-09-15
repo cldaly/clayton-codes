@@ -101,7 +101,7 @@ header {
 
 header h2 {
   font-size: 1.6em;
-  font-weight: 400;
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 5px 0;
@@ -151,6 +151,16 @@ header nav li {
   }
   header nav {
     font-size: 0.9em;
+  }
+}
+
+@media (max-width: 300px) {
+  header h2 {
+    letter-spacing: 0em;
+  }
+  header nav {
+    font-size: 0.85em;
+    margin-top: 10px;
   }
 }
 
@@ -256,8 +266,8 @@ footer p {
 /* LANDING TITLE SECTION */
 
 #landingTitle {
-  font-weight: 400;
-  font-size: 4rem;
+  font-weight: 300;
+  font-size: 4.2rem;
   margin-bottom: 10px;
   letter-spacing: 0.1em;
   color: #000;
@@ -269,6 +279,7 @@ footer p {
 }
 
 #landingMain p {
+  font-weight: 300;
   font-size: 1.5em;
   text-align: center;
   color: #000;
