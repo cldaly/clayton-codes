@@ -212,6 +212,8 @@ footer p {
           order: 2;
 }
 #footerIcons{
+  opacity: 0.6;
+  font-size: 0.8em;
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
