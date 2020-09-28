@@ -6,7 +6,9 @@ var enforce = require('express-sslify');
 var port = process.env.PORT || 3200;
 
 // Force ssl/https redirect
-app.use(enforce.HTTPS({ trustProtoHeader: true }));
+if (port !== 3200) {
+	app.use(enforce.HTTPS({ trustProtoHeader: true }));
+}
 
 // Set app engine + style's dir
 app.set("view engine", "ejs");
@@ -47,6 +49,11 @@ app.get("/rileys-candles", function(req, res){
 // Tic Tac Toe
 app.get("/tic-tac-toe", function(req, res){
 	res.render("tic-tac-toe");
+});
+
+// Grid Dot Game
+app.get("/grid-dot-game", function(req, res){
+	res.render("grid-dot-game");
 });
 
 

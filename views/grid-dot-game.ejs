@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/23839d1fc8.js"></script>
+    <link rel="shortcut icon" href="../img/favicon_io/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon_io/site.webmanifest">
+    <title>Clayton Codes | Grid Dot Game</title>
+</head>
+<body>
+    <header>
+        <h2><a href="/">{{ Clayton Codes }}</a></h2>
+        <nav>
+            <li><a href="/#about">About Me</a></li>
+            <li><a href="/#projects">My Projects</a></li>
+            <li><a href="/#contact">Contact Me</a></li>
+        </nav>
+    </header>
+
+    <div class="grid-dot-game">
+        <div class="game-area">
+            <h1 class="grid-title">Dot Grid Game</h1>
+            <div id="game"></div>
+            <div id="score-area"></div>
+        </div>
+    </div>
+
+    <div class="backBtn">
+        <a href="/#projects"><i class="far fa-arrow-alt-circle-left"></i> Back</a>
+    </div>
+
+    <script src="./scripts/grid-dot-game.js"></script>
+
+<% include ../views/partials/footer.ejs %>
