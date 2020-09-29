@@ -671,6 +671,36 @@ footer p {
       align-self: flex-start;
 }
 
+.game-card {
+  width: 100%;
+}
+.game-card-title {
+  font-weight: 600;
+  opacity: 0.7;
+}
+.game-label {
+  font-weight: 400;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  opacity: 0.7;
+}
+.game-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 10px;
+}
+.game-img a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.game-img img {
+  height: 280px;
+  width: auto;
+}
+
 @media (max-width: 900px) {
   .projectCard {
     -webkit-box-orient: vertical;
@@ -722,6 +752,20 @@ footer p {
   .cardDetails p {
     font-size: 0.9em;
     padding: 5px 10px 10px;
+  }
+  .game-details {
+    flex-direction: column;
+  }
+  .game-img:first-child {
+    margin-bottom: 24px;
+  }
+  .game-img a {
+    align-items: center;
+  }
+  .game-img img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
   }
 }
 
