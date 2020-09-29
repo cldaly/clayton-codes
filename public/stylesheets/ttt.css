@@ -14,14 +14,14 @@
 }
 
 .mainButton {
-    background-color: #59ace0;
-    border: 1px solid #59ace0;
-    border-radius: 4px;
-    color: white;
-    font-size: 1em;
-    height: 35px;
-    width: 80px;
-    margin: 5px;
+  background-color: #59ace0;
+  border: 1px solid #59ace0;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 35px;
+  width: 80px;
+  margin: 5px;
 }
 
 .mainButton:focus {
