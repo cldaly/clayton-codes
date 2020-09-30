@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/snek.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@200;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/23839d1fc8.js"></script>
+    <link rel="shortcut icon" href="../img/favicon_io/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon_io/site.webmanifest">
+    <title>Clayton Codes | Snek Game</title>
+</head>
+<body>
+    <header>
+        <h2><a href="/">{{ Clayton Codes }}</a></h2>
+        <nav>
+            <li><a href="/#about">About Me</a></li>
+            <li><a href="/#projects">My Projects</a></li>
+            <li><a href="/#contact">Contact Me</a></li>
+        </nav>
+    </header>
+    
+	<div class="snek">
+		<h1 class="snek-title">Snek</h1>
+		<div class="snek-game-area">
+			<div class="snek-tool-bar">
+				<button id="snek-btn" type="button" onclick="toggleGame()">Start Game!</button>
+				<div class="snek-score">Score: <span id="score">0</span></div>
+			</div>
+			
+			<canvas id="snek-game"></canvas>
+
+			<div class="controls">
+				<span>Controls:</span><div class="snek-controls">Up: 'w',  Down: 's',  Left: 'a',  Right: 'd'<br>'Space' - pause/start</div>
+			</div>
+		</div>
+		<div class="backBtn">
+			<a href="/#projects"><i class="far fa-arrow-alt-circle-left"></i> Back</a>
+		</div>
+		<div class="game-over-modal" id="snek-modal">
+			<div class="modal-content">
+			  <span id="close-modal">&times;</span>
+			  <div class="modal-title">Game Over!</div>
+			  <div id="modal-text">
+				<div>Score: <span id="modal-score"></span></div>
+				<div>High Score: <span id="high-score"></span></div>
+			  </div>
+			</div>
+	  </div>
+    </div>
+<script src="./scripts/snek.js"></script>
+<% include ../views/partials/footer.ejs %>

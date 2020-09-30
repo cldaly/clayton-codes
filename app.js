@@ -56,6 +56,11 @@ app.get("/grid-dot-game", function(req, res){
 	res.render("grid-dot-game");
 });
 
+// Snek Game
+app.get("/snek-game", function(req, res){
+	res.render("snek-game");
+});
+
 
 app.get("/*", function(req, res){
 	res.redirect("/");
